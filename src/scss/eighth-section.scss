@@ -1,0 +1,65 @@
+.eighth-section {
+    line-height: 2;
+    color: #a7a7a7;
+
+    @media(min-width: 992px) {
+        background: url(~/assets/images/7-section.png) no-repeat;
+        background-position: right 0%;
+        background-size: 20% 100%;
+        height: 100%;
+    }
+}
+
+.eighth-section__content {
+    display: flex;
+    padding: 70px 100px;
+}
+
+.eighth-section__content__description,
+.eighth-section__content__support,
+.eighth-section__content__about-us,
+.eighth-section__content__get-newsletter {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    padding-left: 20px;
+
+    @media(min-width: 700px) {
+        width: 25%;
+    }
+    @media(max-width: 699px) {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.eighth-section__content__support,
+.eighth-section__content__about-us,
+.eighth-section__content__get-newsletter {
+    @media(max-width: 699px) {
+        display: none;
+    }
+}
+
+.eighth-section__content__support__list,
+.eighth-section__content__about-us__list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.eighth-section__content__support__title,
+.eighth-section__content__about-us__title,
+.eighth-section__content__about-us__title {
+    font-size: 20px;
+    color: #282828;
+}
+
+.eighth-section__content__get-newsletter__input {
+    font-size: 16px;
+    padding: 10px;
+    margin-top: 20px;
+    width: 70%;
+    background: rgba(127, 127, 127, .16);
+    border: 1px solid rgba(125, 125, 125, .3);
+    border-radius: 2px;
+}

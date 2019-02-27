@@ -1,0 +1,57 @@
+.fourth-section {
+
+    @media(min-width: 992px) {
+        background: url(~/assets/images/4-section.png) no-repeat;
+        background-position: 0% 23%;
+        height: 100%;
+    }
+}
+
+.fourth-section__content__wrapper {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.fourth-section__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media(min-width: 1200px) {
+        padding: 90px 100px 120px 0;
+        width: 45%;
+    }
+    @media(min-width: 992px) and (max-width: 1199px) {
+        padding: 90px 10px 100px 0;
+        width: 30%;
+    }
+    @media(max-width: 991px) {
+        text-align: center;
+        padding: 15px;
+    }
+}
+
+.fourth-section__content__title {
+    text-transform: uppercase;
+    color: #ff6d6d;
+    margin: 10px 0;
+}
+
+.fourth-section__content__subtitle {
+    font-size: 40px;
+    color: #282828;
+    letter-spacing: 3px;
+}
+
+.fourth-section__content__ellipsis {
+    font-size: 40px;
+    color: #ff6d6d;
+    letter-spacing: 3px;
+}
+
+.fourth-section__content__text {
+    padding-top: 20px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #8c8c8f;
+}

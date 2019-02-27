@@ -1,0 +1,125 @@
+.seventh-section {
+    background: #323969;
+}
+
+.seventh-section__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    margin: 0 auto;
+    text-align: center;
+    width: 75%;
+
+    @media(min-width: 992px) {
+        padding-bottom: 80px;
+    }
+}
+
+.seventh-section__content__title {
+    text-transform: uppercase;
+    color: #ff6d6d;
+    margin: 10px 0;
+}
+
+.seventh-section__content__subtitle {
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.seventh-section__content__sign-up-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.seventh-section__content__sign-up-section__help-text {
+    color: #fff;
+    font-weight: 300;
+    text-align: right;
+    padding-right: 15px;
+    height: 85px;
+
+    @media(max-width: 991px) {
+        display: none;
+    }
+
+    &:before {
+        content: url(~/assets/images/seventh-section-arrow.png);;
+        position: relative;
+        top: 28px;
+    }
+}
+
+.seventh-section__content__sign-up-section__func-place {
+    display: flex;
+    justify-content: space-around;
+
+    @media(max-width: 991px) {
+        flex-direction: column;
+    }
+}
+
+.seventh-section__content__sign-up-section__func-place__name,
+.seventh-section__content__sign-up-section__func-place__email,
+.seventh-section__content__sign-up-section__func-place__password {
+    background: rgba(255, 255, 255, .16);
+    border: 1px solid rgba(255, 255, 255, .3);
+    border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+
+    @media(min-width: 992px) {
+        padding: 10px;
+    }
+    @media(max-width: 991px) {
+        padding: 10px;
+        margin: 10px 0;
+    }
+}
+
+.seventh-section__content__sign-up-section__func-place__name::placeholder,
+.seventh-section__content__sign-up-section__func-place__email::placeholder,
+.seventh-section__content__sign-up-section__func-place__password::placeholder {
+    color: #fff;
+    font-weight: 200;
+}
+
+.seventh-section__content__sign-up-section__func-place__try-now-button {
+    background: #ff6d6d;
+    color: #fff;
+    padding: 12px 75px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    &:hover,
+    &:active,
+    &:focus {
+        text-decoration: none;
+    }
+
+    @media(max-width: 991px) {
+        margin-top: 10px;
+    }
+}
+
+.seventh-section__content__help-text,
+.seventh-section__content__help-text__t-and-s {
+    color: #f6f5f3;
+    opacity: 0.7;
+}
+
+.seventh-section__content__help-text {
+    margin: 40px 0 80px;
+}
+
+.seventh-section__content__help-text__t-and-s {
+    &:hover,
+    &:active,
+    &:focus {
+        color: #f6f5f3;
+        opacity: 0.7;
+    }
+}
